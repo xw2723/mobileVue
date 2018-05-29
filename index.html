@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <title>dome1</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+  <script>
+    // var pixel = 1/window.devicePixelRatio;
+    // document.write('<meta name="viewport" content="width=device-width,initial-scale='+pixel+','+'minimum-scale='+pixel+','+'maximum-scale='+pixel+'">')
+    var html = document.getElementsByName('html')[0];
+    var w = html.getBoundingClientRect().width;
+    html.style.fontSize = w/16+'px';  
+  </script>
+</html>
